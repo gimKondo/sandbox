@@ -18,4 +18,4 @@ jobs:
           TAG: ${{github.event.pull_request.title}}
           REPO: ${{github.repository}}
           COMMIT: ${{github.sha}}
-        run: ./../scripts/add-tag.sh
+        run: ./scripts/add-tag.sh
