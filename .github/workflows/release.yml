@@ -17,5 +17,5 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
           TAG: ${{github.event.pull_request.title}}
           REPO: ${{github.repository}}
-          BRANCH: ${{github.event.pull_request.head.sha}}
+          COMMIT: ${{github.event.pull_request.head.sha}}
         run: ./.github/scripts/add-tag.sh
